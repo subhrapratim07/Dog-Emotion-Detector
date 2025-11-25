@@ -4,5 +4,8 @@ keras
 numpy
 pillow
 flask-cors
+<<<<<<< HEAD
 gunicorn
 requests
+=======
+>>>>>>> 26c8753915efad471bf52f741ccb15cac84f2504
