@@ -9,7 +9,7 @@ import os
 
 # --- Configuration ---
 # MODEL_PATH is now relative to the root/backend folder
-MODEL_PATH = 'dog_emotion_model.keras' 
+MODEL_PATH = 'backend/dog_emotion_model.keras' 
 IMG_HEIGHT = 160
 IMG_WIDTH = 160
 CLASS_NAMES = ['angry', 'happy', 'neutral', 'sad']
