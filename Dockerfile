@@ -19,5 +19,5 @@ RUN pip install --no-cache-dir -r backend/requirements.txt
 EXPOSE 8080
 
 # 7. Startup Command: Define the entry point, using Gunicorn to run your app.
-# It binds Gunicorn to all interfaces on port 8080 and loads the 'app' object
-# from the 'backend.app' module.
+# FIX: Use 'python -m gunicorn' for a more reliable module startup, solving the previous runtime error.
+CMD ["python", "-m", "gunicorn", "--bind", "0.0.0.0:8080", "backend.app:app"]
