@@ -9,7 +9,7 @@ const App = () => {
     const [error, setError] = useState(null);
     
     // Flask backend URL (must match the port used in app.py - 5000)
-    const API_URL = 'http://localhost:5000/predict'; 
+    const API_URL = 'https://dog-emotion-detector-api.onrender.com/predict'; 
 
     // Handle file selection and preview generation
     const handleFileChange = (event) => {
