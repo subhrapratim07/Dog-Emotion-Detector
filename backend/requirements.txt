@@ -4,4 +4,3 @@ flask
 Pillow
 flask-cors
 gunicorn
-requests
