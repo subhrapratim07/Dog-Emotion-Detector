@@ -7,7 +7,7 @@ sdk: docker
 app_port: 8080
 ---
 
-# 🐶 Dog Emotion Classification API
+# 🐶PetVibe AI- Dog Emotion Classification API
 
 This API is designed to classify dog emotions (e.g., Happy, Angry, Sad, Neutral) using a large TensorFlow/Keras model (approx. 256 MB).
 
