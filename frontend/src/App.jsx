@@ -107,7 +107,7 @@ const App = () => {
                 {/* Content Block */}
                 <div>
                     <h1 className="text-4xl sm:text-5xl font-extrabold text-red-500 mb-4 text-center tracking-tight">
-                        🐶 Dog Emotion Detector
+                        🐶PetVibe AI - Dog Emotion Detector
                     </h1>
                     <p className="text-center text-gray-400 mb-8 mx-auto">
                         Upload an image of a dog to classify its emotion using a model from your local backend.
