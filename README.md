@@ -12,7 +12,7 @@ This single-page application (SPA) offers an intuitive interface where users can
 * **Confidence Scoring:** Displays the AI's certainty for each prediction.
 
 ## 📸 Demo
-![PetVibe AI Dashboard](image_c46fd1.jpg)
+![PetVibe AI Dashboard](petvibe-demo-screenshot.png)
 *The PetVibe AI interface featuring the "Understand Your Dog Better" dashboard.*
 
 ---
