@@ -12,7 +12,7 @@ This single-page application (SPA) offers an intuitive interface where users can
 * **Confidence Scoring:** Displays the AI's certainty for each prediction.
 
 ## 📸 Demo
-![PetVibe AI Dashboard](https://raw.githubusercontent.com/subhrapratim/petvibe-ai-frontend/main/image_c46fd1.jpg)
+![PetVibe AI Dashboard](image_c46fd1.jpg)
 *The PetVibe AI interface featuring the "Understand Your Dog Better" dashboard.*
 
 ---
@@ -41,3 +41,48 @@ Follow these steps to get your local development environment running.
 ```bash
 git clone [https://github.com/subhrapratim/petvibe-ai-frontend.git](https://github.com/subhrapratim/petvibe-ai-frontend.git)
 cd petvibe-ai-frontend
+```
+
+### 3. Install Dependencies
+```bash
+npm install
+```
+
+### 4. Environment Configuration
+The application needs to know where your Dockerized AI model is running. Create a `.env` file in the root directory and add your backend API endpoint:
+```env
+VITE_API_URL="https://Subhrapratim07/Dog-Emotion-API-Docker.hf.space"
+```
+
+### 5. Run the Application
+Start the development server locally:
+```bash
+npm run dev
+```
+The application should now be running locally, typically at [http://localhost:5173](http://localhost:5173).
+
+---
+
+## 📡 API Interaction Logic
+The core functionality of this frontend is the API call made when a user submits an image. The application handles the file upload by:
+
+1. **Capturing** the image file from the input field.
+2. **Creating** a `FormData` object.
+3. **Appending** the file to the `FormData` object with the key `file`.
+4. **Sending** a `POST` request to the backend `/predict` endpoint.
+
+| Detail | Value |
+| :--- | :--- |
+| **Method** | POST |
+| **Endpoint** | `${VITE_API_URL}/predict` |
+| **Body Type** | multipart/form-data |
+| **File Key** | `file` |
+
+The backend responds with a JSON object containing the predicted emotion and confidence score, which is then rendered dynamically in the UI.
+
+---
+
+## 📝 Future Scope
+* **Live Camera Feed:** Support for real-time webcam captures and processing.
+* **History Tracking:** Implement user authentication and save a history of previous predictions.
+* **Educational Resources:** Create a dedicated "Understanding Dog Emotions" resource page for users.
